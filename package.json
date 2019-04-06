@@ -1,5 +1,5 @@
 {
-  "name": "@flydev-beta/vue-tailwind-components",
+  "name": "vue-tailwind-components",
   "version": "1.0.0",
   "description": "Tailwind CSS components for Vue.js",
   "author": "Martín M.",
