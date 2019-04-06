@@ -3,10 +3,10 @@ import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { withInfo } from 'storybook-addon-vue-info';
 import centered from '@storybook/addon-centered/vue';
 
-import ButtonSimple from '../src/Widgets/Buttons/ButtonSimple.vue';
-import ButtonPill from '../src/Widgets/Buttons/ButtonPill.vue';
-import ButtonOutline from '../src/Widgets/Buttons/ButtonOutline.vue';
-import Button3D from '../src/Widgets/Buttons/Button3D.vue';
+import ButtonSimple from '../src/Buttons/ButtonSimple.vue';
+import ButtonPill from '../src/Buttons/ButtonPill.vue';
+import ButtonOutline from '../src/Buttons/ButtonOutline.vue';
+import Button3D from '../src/Buttons/Button3D.vue';
 
 import tailwindColors from './tailwind-colors';
 

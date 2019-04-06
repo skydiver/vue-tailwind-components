@@ -1,10 +1,10 @@
 import BaseContainer from './Containers/BaseContainer.vue';
 import Box from './Containers/Box.vue';
 
-import Button3D from './Widgets/Buttons/Button3D.vue';
-import ButtonOutline from './Widgets/Buttons/ButtonOutline.vue';
-import ButtonPill from './Widgets/Buttons/ButtonPill.vue';
-import ButtonSimple from './Widgets/Buttons/ButtonSimple.vue';
+import Button3D from './Buttons/Button3D.vue';
+import ButtonOutline from './Buttons/ButtonOutline.vue';
+import ButtonPill from './Buttons/ButtonPill.vue';
+import ButtonSimple from './Buttons/ButtonSimple.vue';
 
 import MetricCard from './Widgets/MetricCard.vue';
 import PageHeader from './Widgets/PageHeader.vue';
