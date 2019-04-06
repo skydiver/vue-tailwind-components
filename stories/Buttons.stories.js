@@ -62,3 +62,26 @@ stories.add('Outline', () => ({
     }
   }
 }));
+
+stories.add('3D', () => ({
+  components: { 'vt-button-3d': Button3D },
+  template:
+    '<vt-button-3d :label="label" :background-color="backgroundColor" :hover-color="hoverColor" :text-color="textColor" :border-color="borderColor" />',
+  props: {
+    label: {
+      default: text('Label', 'Sample Button')
+    },
+    backgroundColor: {
+      default: select('Backg. color', Object.keys(tailwindColors), 'red')
+    },
+    borderColor: {
+      default: select('Border color', Object.keys(tailwindColors), 'red-dark')
+    },
+    hoverColor: {
+      default: select('Hover color', Object.keys(tailwindColors), 'red-light')
+    },
+    textColor: {
+      default: select('Text color', Object.keys(tailwindColors), 'white')
+    }
+  }
+}));
