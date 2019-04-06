@@ -1,6 +1,12 @@
-import { BaseContainer, Box } from './Containers';
-import { MetricCard, PageHeader } from './Widgets';
-import { BarChart, DoughnutChart, LineChart } from './Charts';
+import BaseContainer from './Containers/BaseContainer.vue';
+import Box from './Containers/Box.vue';
+
+import MetricCard from './Widgets/MetricCard.vue';
+import PageHeader from './Widgets/PageHeader.vue';
+
+import BarChart from './Charts/BarChart.vue';
+import DoughnutChart from './Charts/DoughnutChart.vue';
+import LineChart from './Charts/LineChart.vue';
 
 export default {
   install(Vue) {
