@@ -1,19 +1,26 @@
 {
-  "name": "vue-sample-button",
+  "name": "@flydev-beta/vue-tailwind-components",
   "version": "1.0.0",
-  "description": "Just a sample component",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Tailwind CSS components for Vue.js",
   "author": "Martín M.",
   "license": "MIT",
+  "private": false,
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && bili --bundle-node-modules"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
+    "bili": "^4.7.2",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^5.2.2",
-    "prettier": "^1.16.4"
-  }
+    "prettier": "^1.16.4",
+    "rollup-plugin-vue": "^4.7.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "files": [
+    "dist/*"
+  ]
 }
