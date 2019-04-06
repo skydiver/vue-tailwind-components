@@ -9,7 +9,7 @@
   "scripts": {
     "build": "rm -rf dist && bili --bundle-node-modules",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c .storybook -o .out"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
