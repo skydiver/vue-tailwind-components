@@ -1,5 +1,6 @@
 import { BaseContainer, Box } from './Containers';
 import { MetricCard, PageHeader } from './Widgets';
+import { BarChart, DoughnutChart, LineChart } from './Charts';
 
 export default {
   install(Vue) {
@@ -10,5 +11,10 @@ export default {
     // Widgets
     Vue.component('vt-metric-card', MetricCard);
     Vue.component('vt-page-header', PageHeader);
+
+    // Charts
+    Vue.component('vt-chart-bar', BarChart);
+    Vue.component('vt-chart-doughnut', DoughnutChart);
+    Vue.component('vt-chart-line', LineChart);
   }
 };
