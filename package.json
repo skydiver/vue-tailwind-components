@@ -1,6 +1,6 @@
 {
   "name": "vue-tailwind-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tailwind CSS components for Vue.js",
   "author": "Martín M.",
   "license": "MIT",
@@ -40,5 +40,20 @@
   },
   "files": [
     "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skydiver/vue-tailwind-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skydiver/vue-tailwind-components/issues"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "tailwindcss",
+    "tailwind",
+    "components",
+    "component-library"
   ]
 }
