@@ -10,7 +10,9 @@
     "build": "rm -rf dist && bili --bundle-node-modules",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o .out",
-    "now-build": "npm run build-storybook"
+    "now-build": "npm run build-storybook",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
