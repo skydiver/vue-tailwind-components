@@ -12,7 +12,14 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@storybook/vue": "^5.0.6",
     "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-vue": "^2.0.2",
     "bili": "^4.7.2",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
@@ -20,14 +27,9 @@
     "eslint-plugin-vue": "^5.2.2",
     "prettier": "^1.16.4",
     "rollup-plugin-vue": "^4.7.2",
-    "vue-template-compiler": "^2.6.10",
-    "@storybook/vue": "^5.0.6",
-    "@storybook/addon-actions": "^5.0.6",
-    "@storybook/addon-links": "^5.0.6",
-    "@storybook/addons": "^5.0.6",
-    "babel-preset-vue": "^2.0.2",
-    "@babel/core": "^7.4.3",
-    "babel-loader": "^8.0.5"
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10"
   },
   "files": [
     "dist/*"
