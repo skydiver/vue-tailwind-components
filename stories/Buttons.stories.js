@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
-import { withInfo } from 'storybook-addon-vue-info';
 import centered from '@storybook/addon-centered/vue';
 
 import ButtonSimple from '../src/Buttons/ButtonSimple.vue';
@@ -28,7 +27,6 @@ const baseButtonProps = () => ({
 const stories = storiesOf('Buttons', module);
 
 stories.addDecorator(withKnobs);
-stories.addDecorator(withInfo);
 stories.addDecorator(centered);
 
 stories.add(
