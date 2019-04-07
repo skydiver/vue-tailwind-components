@@ -7,7 +7,7 @@
   "private": false,
   "main": "./dist/index.js",
   "scripts": {
-    "build": "rm -rf dist && bili --bundle-node-modules",
+    "build": "rm -rf dist && bili --bundle-node-modules src/*.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "now-build": "npm run build-storybook",
