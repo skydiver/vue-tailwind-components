@@ -1,7 +1,7 @@
 <template>
   <div class="w-full md:w-1/2 xl:w-1/3 p-3">
     <div
-      :class="[cardColor, cardBorderColor]"
+      :class="[crdColor, crdBorderColor]"
       class="border-b-4 rounded-lg shadow-lg p-5"
     >
       <div class="flex flex-row items-center">
@@ -71,6 +71,12 @@ export default {
     };
   },
   computed: {
+    crdColor() {
+      return `bg-${this.cardColor}`;
+    },
+    crdBorderColor() {
+      return `border-${this.cardBorderColor}`;
+    },
     bgIconColor() {
       return `bg-${this.iconColor}`;
     },
