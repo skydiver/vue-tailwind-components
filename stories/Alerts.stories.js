@@ -4,6 +4,7 @@ import { withInfo } from 'storybook-addon-vue-info';
 import centered from '@storybook/addon-centered/vue';
 
 import WithIcon from '../src/Alerts/WithIcon.vue';
+import Simple from '../src/Alerts/Simple.vue';
 
 const alertContent =
   '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, a! A culpa, incidunt magnam, ipsam quas aperiam id vero possimus architecto et nobis nisi, aliquid necessitatibus soluta dolorum non nihil.</p>';
@@ -14,7 +15,7 @@ const alertProps = () => ({
   },
   type: {
     default: select(
-      'Arrow type',
+      'Alert type',
       ['warning', 'info', 'success', 'error'],
       'success'
     )
@@ -32,6 +33,18 @@ stories.add(
   () => ({
     components: { 'vt-alert-icon': WithIcon },
     template: `<vt-alert-icon :title="title" :type="type">${alertContent}</vt-alert-icon>`,
+    props: alertProps()
+  }),
+  {
+    info: true
+  }
+);
+
+stories.add(
+  'Simple',
+  () => ({
+    components: { 'vt-alert-simple': Simple },
+    template: `<vt-alert-simple :title="title" :type="type">Important Message!</vt-alert-simple>`,
     props: alertProps()
   }),
   {
