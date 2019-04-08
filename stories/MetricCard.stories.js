@@ -1,5 +1,6 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs, text, select } from '@storybook/addon-knobs';
+import { withInfo } from 'storybook-addon-vue-info';
 import centered from '@storybook/addon-centered/vue';
 
 import MetricCard from '../src/Widgets/MetricCard.vue';
@@ -10,6 +11,7 @@ const colors = Object.keys(tailwindColors);
 const stories = storiesOf('Widgets', module);
 
 stories.addDecorator(withKnobs);
+stories.addDecorator(withInfo);
 stories.addDecorator(centered);
 
 stories.add(

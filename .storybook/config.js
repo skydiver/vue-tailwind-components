@@ -1,7 +1,4 @@
-import { configure, addDecorator } from '@storybook/vue';
-import { withInfo, setDefaults } from 'storybook-addon-vue-info';
-
-addDecorator(withInfo);
+import { configure } from '@storybook/vue';
 
 const req = require.context('../stories', true, /.stories.js$/);
 
