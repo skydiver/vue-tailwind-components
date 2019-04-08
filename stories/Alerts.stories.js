@@ -6,6 +6,7 @@ import centered from '@storybook/addon-centered/vue';
 import WithIcon from '../src/Alerts/WithIcon.vue';
 import Simple from '../src/Alerts/Simple.vue';
 import Border from '../src/Alerts/Border.vue';
+import Titled from '../src/Alerts/Titled.vue';
 
 const alertContent =
   '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, a! A culpa, incidunt magnam, ipsam quas aperiam id vero possimus architecto et nobis nisi, aliquid necessitatibus soluta dolorum non nihil.</p>';
@@ -58,6 +59,17 @@ stories.add(
   () => ({
     components: { 'vt-alert-border': Border },
     template: `<vt-alert-border :title="title" :type="type">Used to display important messages.</vt-alert-simple>`,
+    props: alertProps()
+  }),
+  {
+    info: true
+  }
+);
+stories.add(
+  'Titled',
+  () => ({
+    components: { 'vt-alert-titled': Titled },
+    template: `<vt-alert-titled :title="title" :type="type">Used to display important messages.</vt-alert-simple>`,
     props: alertProps()
   }),
   {
