@@ -1,14 +1,16 @@
 {
-  "name": "oss-sites",
+  "name": "vue-components",
   "version": 2,
   "builds": [
     {
       "src": "package.json",
       "use": "@now/static-build",
-      "config": { "distDir": ".out" }
+      "config": {
+        "distDir": ".out"
+      }
     }
   ],
   "alias": [
-    "vue-tailwind.now.sh"
+    "vue-tailwind-components.now.sh"
   ]
 }
