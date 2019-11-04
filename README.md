@@ -14,7 +14,7 @@ import VueTailwindComponents from 'vue-tailwind-components';
 Vue.use(VueTailwindComponents);
 ```
 
-## Nutx.js
+## Nuxt.js
 1. create `plugins/vue-tailwind-components.js`
 2. import component similar to **Usage** section
 3. on `nuxt.config.js` add plugin to `plugins: ['~/plugins/vue-tailwind-components.js'],`
